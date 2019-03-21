@@ -10,7 +10,10 @@ import UIKit
 
 class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-  
+    @IBOutlet weak var txtStudentId: UITextField!
+    
+    @IBOutlet weak var txtName: UITextField!
+    
     
     
     @IBOutlet weak var lblCourse: UILabel!
@@ -19,6 +22,8 @@ class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPi
     @IBOutlet weak var pickList: UIPickerView!
     
     var courseList = ["MADT","MODT", "CSD", "WADT"]
+    
+    
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -45,7 +50,15 @@ class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPi
     }
     
     
-
+    @IBOutlet weak var lblDate: UILabel!
+    
+    
+    @IBAction func pickDate(_ sender: UIDatePicker) {
+        print(sender.date)
+        lblDate.text = "BirthDate : \(sender.date)"
+    }
     
 
 }
+
+
