@@ -200,9 +200,12 @@
                                 <rect key="frame" x="96" y="542" width="75" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="btnCalculate:" destination="r5O-2r-bS0" eventType="touchUpInside" id="KgV-Zm-6SM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTq-zd-cQL">
-                                <rect key="frame" x="29" y="568" width="71" height="39"/>
+                                <rect key="frame" x="29" y="577" width="71" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -223,8 +226,14 @@
                     <connections>
                         <outlet property="lblCourse" destination="fS6-vI-pL9" id="FXk-Pq-ByV"/>
                         <outlet property="lblDate" destination="LW8-B1-bXY" id="90l-zD-sOM"/>
+                        <outlet property="lblTotal" destination="2M6-hL-4qF" id="opE-MD-tFr"/>
                         <outlet property="pickList" destination="e7r-TY-BNs" id="iOe-y1-aNh"/>
+                        <outlet property="txtM1" destination="N5s-YS-jgN" id="5YJ-UT-6mo"/>
+                        <outlet property="txtM2" destination="2bH-bu-sh6" id="xPv-1W-eCQ"/>
+                        <outlet property="txtM3" destination="77R-9L-bul" id="Jt3-Im-uz8"/>
+                        <outlet property="txtM4" destination="dYd-Fv-Yh9" id="gRg-o0-9mk"/>
                         <outlet property="txtName" destination="4oo-cS-9em" id="5e4-rg-rYx"/>
+                        <outlet property="txtStudentEmail" destination="rTD-pq-yV5" id="0OU-RN-mET"/>
                         <outlet property="txtStudentId" destination="kyA-ef-4RF" id="5AL-Mr-Kki"/>
                     </connections>
                 </viewController>

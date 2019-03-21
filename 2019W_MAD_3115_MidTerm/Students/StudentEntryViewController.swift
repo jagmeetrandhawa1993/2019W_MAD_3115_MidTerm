@@ -14,7 +14,25 @@ class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPi
     
     @IBOutlet weak var txtName: UITextField!
     
+    @IBOutlet weak var txtStudentEmail: UITextField!
     
+    @IBOutlet weak var txtM1: UITextField!
+    
+    @IBOutlet weak var txtM2: UITextField!
+    
+    @IBOutlet weak var txtM3: UITextField!
+    
+    @IBOutlet weak var txtM4: UITextField!
+  
+    @IBAction func btnCalculate(_ sender: UIButton) {
+        
+        
+        
+        
+    }
+    
+    //@IBOutlet weak var lblTotal: UILabel!
+    @IBOutlet weak var lblTotal: UILabel!
     
     @IBOutlet weak var lblCourse: UILabel!
     
@@ -39,6 +57,8 @@ class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPi
 
         self.pickList.delegate = self
         self.pickList.dataSource = self
+        
+        
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -58,7 +78,22 @@ class StudentEntryViewController: UIViewController, UIPickerViewDataSource, UIPi
         lblDate.text = "BirthDate : \(sender.date)"
     }
     
+    
+   
+    }
+        
 
-}
+    
+
+
+
+
+
+
+
+
+
+
+
 
 

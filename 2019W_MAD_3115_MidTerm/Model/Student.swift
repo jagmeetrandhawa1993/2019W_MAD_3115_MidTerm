@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class student{
+    var studentId: String?
+    var studentName: String?
+    var course: String?
+    var date: Date?
+    var marks:[Float]?
+    
+    init(studentId: String, studentName: String , course: String,date: Date, marks: [Float]) {
+        self.studentId = studentId
+        self.studentName = studentName
+        self.course = course
+        self.date = date
+        self.marks = marks
+}
+}
